@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+  h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}   
+  .menu-nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  color: white;
+  padding: 3px;
+}
+
+.three-dots:after {
+  cursor: pointer;
+  color: #FCC;
+  content: '\2807';
+  font-size: 25px;
+  padding: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a div {
+  padding: 2px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0px 0px 3px 3px rgb(15, 15, 15);
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s, z-index 0.1s, max-height 5s;
+}
+
+.dropdown-container:focus {
+  outline: none;
+}
+
+.dropdown-container:focus .dropdown {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s, z-index 0.2s, max-height 0.2s;
+}   
+  
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}     
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #434444;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+        body {background-color: black;}
+        h1   {color: white;}
+        p    {color: white;}
+        td   {color: white;}
+        </style>
+        <title>Ketan kshirsagar</title>
+    <title>Page Title</title>
+
+</head>
+<body>
+<table border="0" width="1024" align="center">
+  <tr height="20">
+    <td>
+      <div class="menu-nav">
+      <div class="menu-item">HOME</div>
+      <div class="menu-item">PROFESSIONAL</div>
+      <div class="menu-item">REEL</div>
+      <div class="menu-item">STORE</div>
+      <div class="menu-item">RESUME</div>
+      <div class="menu-item">CONTACT</div>
+      <div class="dropdown-container" tabindex="-1">
+        <div class="three-dots"></div>
+        <div class="dropdown">
+          <a href="#"><div>ABOUT US</div></a>
+          <a href="#"><div>CONTACT US</div></a>
+          <a href="#"><div>MY WORK</div></a>
+        </div>
+      </div>
+    </div></td>
+  </tr>
+  
+  <tr height="50">
+    <td style="text-align:left">
+		<table border="0">
+		<tr height="50">
+		<td style="text-align:left" width="1500">
+            <h1 style="font-family:verdana">
+                <img src="weblogo.jpg" alt="weblogo" style="float:left;width:42px;height:42px;">
+                 ketan kshirsagar
+        </h1>     
+        <p style="font-size:30px;">CGI Artist</p>
+		</td>
+		
+		<td width="709">
+		</td>
+		</table>
+	
+        
+	</td>
+  </tr>
+  <tr height="230">
+    <div style="background-image: url('myworkfinal.jpg');">
+    <td background="myworkfinal.jpg">          
+    <ul>
+  <li style="font-family:verdana"><a class="active" href="#home">HOME</a></li>
+  <li style="font-family:verdana"><a href="#news">PROFESSIONAL</a></li>
+  <li style="font-family:verdana"><a href="#contact">PERSONAL</a></li>
+  <li style="font-family:verdana"><a href="#about">REEL</a></li>
+  <li style="font-family:verdana"><a href="#about">STORE</a></li>
+  <li style="font-family:verdana"><a href="#about">RESUME</a></li>
+  <li style="font-family:verdana"><a href="#about">CONTACT</a></li>
+</ul>
+	</td>
+  </tr>
+  
+  <tr height="2">
+    <td><div class="row">
+      <div class="column">
+        <img src="03chess.jpg" alt="Snow" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="01scifi.jpg" alt="Forest" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="02scifi.jpg" alt="Mountains" style="width:100%">
+      </div>
+    </div></td>
+  </tr>
+  
+  <tr height="400">
+    <td>
+      
+      
+        <video width="1024" controls>
+            <source src="ship final work.mp4" type="video/mp4">
+            <source src="ship final work.ogg" type="video/ogg">
+        </td>
+  </tr>
+  
+  <table border="0" width="1024" align="center">
+  <tr height="500">
+    <td><p style="font-family:verdana">Skills</p>
+     <p style="font-family:verdana"> PROGRAMMING SKILLS
+      For more than 20 years our experts have been accomplishing enough with modern Web Development, new generation web and app programming language.
+      
+      HTML & CSS95%
+      JavaScript80%
+      WordPress90%</p>
+      </td>
+      <td width="512">ketan
+        
+      </td>
+  </tr>
+</table>
+  
+  
+  
+  
+</table>
+
+
+</body>
+</html>
